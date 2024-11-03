@@ -1,14 +1,17 @@
-package com.digitaldart.chatservice.model;
+package com.digitaldart.chatservice.ChatMessage.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class ChatMessage {
-    String message;
+    String content;
+    String type;
     String user;
     String timestamp;
 }
